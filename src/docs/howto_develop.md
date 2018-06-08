@@ -163,10 +163,10 @@ the python tests tagged with 'integration':
 For convenience, this is wrapped up in a script `build-support/bin/unit-test.sh`.
 
 If you only want to run tests for changed targets, then you can use the
-`test-changed` goal:
+`--changed-parent` option against master:
 
     :::bash
-    $ ./pants test-changed
+    $ ./pants --changed-parent=master test
 
 You can run your code through the Travis-CI before you submit a change. Travis-CI is integrated
 with the pull requests for the `pantsbuild/pants` repo. Travis-CI will test it soon after the pull
